@@ -1,0 +1,34 @@
+{
+  "name": "introduction-webpack",
+  "version": "1.0.0",
+  "description": "- npm install --save-dev webpack webpack-cli",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start:dev": "webpack serve",
+    "eslint": "eslint ./src/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.19.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-watch": "^7.0.0",
+    "html-webpack-plugin": "^5.0.0",
+    "webpack": "^5.20.1",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "D": "^1.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
