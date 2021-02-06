@@ -1,6 +1,7 @@
 import React from "react";
 import Card from './Card';
 import ListItem from './ListItem';
+import Events from './Events';
 
 const buttonA = <button>Histórico dos Clientes</button>
 
@@ -31,7 +32,7 @@ const App = () => {
 
     return (
       <div>
-        <h1>Nome do Cliente: Eldon Costa</h1>
+        <h3>Nome do Cliente: Eldon Costa</h3>
       </div>
     )
   } 
@@ -44,8 +45,8 @@ const App = () => {
       <div>
         {showCustomer()}
       </div>
-      <Card />
       <ListItem />
+      <Events />
     </div>
   );
 }

@@ -20,6 +20,11 @@ const listCustomer = [
 ]
 const App = () => {
 
+  const handleClick = (e, id) => {
+    console.log('deletar cliente ' + id)
+  }
+
+
   const renderSkills = (skill, index) => {
     return (
       <div style={ {paddingLeft: '30px'} }  key={`skill-${index}`}>
@@ -32,7 +37,7 @@ const App = () => {
   const renderCustomers = (customer, index) => {
     return (
       <div key={`customer-${customer.id}`}>
-        <li>{customer.name}</li>
+        <li>{customer.name}  <button onClick={(e) => handleClick(e, customer.id)}>Deletear Cliente x</button></li>
         {customer.skills.map(renderSkills)}        
       </div>
     )
@@ -40,10 +45,7 @@ const App = () => {
   
   return (
     <div>
-      <p>Digital Innovation One</p>
-      <p>Bem vindo a aula webpack 4 =D.</p>
-      <Card />
-      
+     <h3>List Item</h3>    
       <div>
         <ul>
           {listCustomer.map(renderCustomers)}
