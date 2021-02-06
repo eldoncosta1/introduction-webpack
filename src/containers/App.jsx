@@ -1,7 +1,7 @@
 import React from "react";
-import Card from './Card';
-import ListItem from './ListItem';
-import Events from './Events';
+import Card from '../Card';
+import ListItem from '../ListItem';
+import Events from '../Events';
 
 const buttonA = <button>Histórico dos Clientes</button>
 

@@ -23,3 +23,12 @@ Aprendendo a configurar o webpack através de aula introdutória ao ReactJS no B
 ### Instalação do EsLint
 
 - npm install --save-dev eslint babel-eslint eslint-plugin-react eslint-watch
+
+### Dicas para pensar do jeito ReactJS
+
+- Comece com um Mock
+- Separe a UI em uma hierarquia de componentes
+- Crie uma versão estática em React
+- Identifique a representação mínima (mas completa) do state da UI
+- Identifique onde o state deve ficar
+- Adicione o fluxo de dados inverso
